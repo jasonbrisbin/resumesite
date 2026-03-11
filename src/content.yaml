@@ -14,16 +14,21 @@ BasicInfo:
   - Icon: fas fa-map-marker-alt
     Info: Minnesota
 
-Profile: I am a senior engineer with 25 years of experience including roles such as Systems Engineer, Architect, Technology Manager, and DevOps Engineer. I have a unique blend of knowledge that includes on-premise and cloud infrastructure at all layers of the stack. I have worked in both Operations and Development organizations. I am looking for a position which centers around problem solving, teaching, and strategic planning and is software focused.
+Profile: I am a senior engineer with 30 years of experience including roles such as Systems Engineer, Architect, Technology Manager, and DevOps Engineer. I have a unique blend of knowledge that includes on-premise and cloud infrastructure at all layers of the stack. I have worked in both Operations and Development organizations. I am looking for a position which centers around problem solving, teaching, and strategic planning and is software focused.
 
 Experience:
 - Employer: Olympus
   Place: Minnesota, US
   Positions:
   - Title: Senior DevOps Engineer
-    Date: May 2024 - March 2026
+    Date: May 2024 - Current
     Details:
     - Implemented and refactored Terraform code to deploy Azure Landing Zone infrastructure across multiple Tenants.
+    - Redesigned and implemented vWAN in Azure using an Azure Firewall leveraging routing intent.
+    - Engineered our internal DNS solution using the virtual hub extension pattern.
+    - Built and deployed Azure DevOps agents on the private network using an ADO managed VMSS and the officialy runner images from Microsoft.
+    - Migrated from stand alone terraform CLI with shared state file to Terraform Cloud.  Created IaC to manage our Terraform Cloud organization including populating workspaces with deployment output
+    - Conducted POC to automate resource Tagging using Terratag to tie build and deployments to resources in the Azure control plane.
     - Automated PIM Setup and enrollment using Azure DevOps pipelines, Terraform, and Powershell to configure group options, eligible assignments, and owners.
     - Aligned the team around an agile methodology introducing Working Agreements, formalizing a Definition of Done, and then organizing our backlog by Epic, Feature, and User Stories based on priority and delivery commitments.
     - Designed, developed, and implemented a least privilege access module for a multitenancy environment in postgres with Terraform.

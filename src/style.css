@@ -15,6 +15,7 @@ body{box-sizing:border-box;margin:0}
 @media print{@page{margin:0;size:A4}}
 ::selection{color:#fff;background-color:rgba(54,22,115,.6)}
 body{font-family:roboto,sans-serif;font-weight:300;line-height:1.7;font-size:1.12rem;color:#666}
+@media print{body{font-family:"Segoe UI",Calibri,sans-serif;font-weight:400;font-variant-ligatures:none;font-feature-settings:"liga" 0,"clig" 0,"dlig" 0}}
 .mainHeading{text-transform:uppercase;font-size:5rem;color:#e2bf2b}
 .mainHeading span{color:#4a1e9e}
 .section__title{font-size:2.1rem;color:#666}
@@ -34,12 +35,10 @@ h1,h2{text-transform:uppercase;font-family:oswald,sans-serif}
 .sideSection li{list-style:none}
 .experience__extra_padding{padding-top:4rem!important}
 .experience__item{display:block;position:relative;margin-bottom:10px;margin-top:10px}
-@media print{.experience__item{page-break-inside:avoid}}
 .experience__item:not(:first-child){padding-top:1.5rem}
 .experience__item::before{content:"";height:90%;width:1.5px;position:absolute;background:linear-gradient(#666,rgba(255,255,255,0));margin-top:25px}
 .experience__header,.experience__subheader{display:flex;width:100%;height:2.4rem}
-.experience__job{position:relative;transition:transform .2s cubic-bezier(.63,.21,.76,1.58);margin-bottom:2rem}
-.experience__job:hover{transform:translateX(.5rem)}
+.experience__job{position:relative;margin-bottom:2rem}
 .experience__company,.experience__position{text-align:left;width:70%;float:left}
 .experience__company{color:#666}
 .experience__position{text-transform:uppercase;font-size:1.3rem;color:#666;margin-left:1rem}
