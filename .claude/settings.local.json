@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git config:*)",
+      "WebFetch(domain:jasonbrisbin.com)",
+      "Bash(curl -s https://jasonbrisbin.com)",
+      "Bash(curl -s https://jasonbrisbin.com/style.main.min.49709e37520d11ea9b6252328c6e59c1bc7b937f44631afdce2875e0ba668589.css)",
+      "Bash(pip install:*)",
+      "Bash(python build.py)"
+    ]
+  }
+}

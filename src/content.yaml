@@ -1,0 +1,198 @@
+BasicInfo:
+  FirstName: Jason
+  LastName: Brisbin
+  Photo: img/headshot-small.jpg
+  Contacts:
+  - Icon: fas fa-envelope
+    Info: j.brisbin@gmail.com
+  - Icon: fas fa-globe
+    Info: <a class="contact__link" href="https://jasonbrisbin.com" target="_blank">jasonbrisbin.com</a>
+  - Icon: fab fa-linkedin-in
+    Info: <a class="contact__link" href="https://www.linkedin.com/in/jason-brisbin-3955841/" target="_blank">LinkedIn</a>
+  - Icon: fab fa-github
+    Info: <a class="contact__link" href="https://github.com/jasonbrisbin" target="_blank">Github</a>
+  - Icon: fas fa-map-marker-alt
+    Info: Minnesota
+
+Profile: I am a senior engineer with 25 years of experience including roles such as Systems Engineer, Architect, Technology Manager, and DevOps Engineer. I have a unique blend of knowledge that includes on-premise and cloud infrastructure at all layers of the stack. I have worked in both Operations and Development organizations. I am looking for a position which centers around problem solving, teaching, and strategic planning and is software focused.
+
+Experience:
+- Employer: Olympus
+  Place: Minnesota, US
+  Positions:
+  - Title: Senior DevOps Engineer
+    Date: May 2024 - March 2026
+    Details:
+    - Implemented and refactored Terraform code to deploy Azure Landing Zone infrastructure across multiple Tenants.
+    - Automated PIM Setup and enrollment using Azure DevOps pipelines, Terraform, and Powershell to configure group options, eligible assignments, and owners.
+    - Aligned the team around an agile methodology introducing Working Agreements, formalizing a Definition of Done, and then organizing our backlog by Epic, Feature, and User Stories based on priority and delivery commitments.
+    - Designed, developed, and implemented a least privilege access module for a multitenancy environment in postgres with Terraform.
+    - Redesigned deployment processes moving to a gitflow type process, reconcilled more than 500 occurences of drift with running state , refactored pipelines to leverage templates, and added CI testing to IAC pipelines.
+    Badges: ['Azure DevOps', 'Azure', 'Terraform', 'Powershell', 'Kubernetes', 'Postgresql']
+- Employer: iTrellis
+  Place: Minnesota, US
+  Positions:
+  - Title: Senior DevOps Engineer
+    Date: May 2022 - May 2024
+    Details:
+    - Designed and built a highly available, zone-redundant database solution using Azure Postgres Flexible Server and vNet integration for an internal self-service API. Deployed via Terraform and Azure DevOps as part of the app deployment pipeline.
+    - Key member of the Platform Engineering team responsible for delivering global AKS infrastructure for development teams across the United States, Europe, and China, employing Terraform, Python, Shell Scripts, and Helm, deployed via Azure DevOps.
+    - Introduced a feature flagging solution to enable safe continuous delivery of new features for our API to all environments.
+    - Implemented database version control and automated database migrations for an internal API based on Python, FastAPI, SQLAlchemy, Alembic, and PostgreSQL.
+    - Built testing capabilities for integration testing in an ephemeral environment within Azure DevOps for each pull request, utilizing Docker, Azure Container Registries, and Python.
+    - Engineered system test and end-to-end testing solutions within the application deployment pipeline, automating validation of changes as a requirement for successful deployments.
+    - Collaborated on a proof of concept for Crossplane to provision infrastructure using Kubernetes as the Control Plane. This tool allows for the provisioning of cloud resources using Kubernetes standard deployments.
+    - Integrated Azure Cost exports data with Kubecost, providing comprehensive out-of-cluster analysis for namespaces and associated shared resources, empowering application teams with valuable insights.
+    - Conducted an in-depth DevOps capabilities analysis, identifying areas of improvement in clients' Build and Release processes, Infrastructure, Operations, and Change Management.
+    - Achieved Azure Development Associate certification (AZ-204 exam) and HashiCorp Certified Terraform Associate certification.
+    Badges: ['Azure DevOps', 'Azure', 'Python', 'Terraform', 'Shell', 'Kubernetes', 'Helm', 'AWS', 'Postgresql']
+- Employer: Vanco Payment Solutions
+  Place: Minnesota, US
+  Class: "experience__extra_padding"
+  Positions:
+  - Title: DevOps Lead
+    Date: Sep 2019 - May 2022
+    Details:
+    - Maintained our Infrastructure as Code templates and tooling for deploying to Azure.  Our PowerShell tooling enriches ARM templates with dynamic runtime values, while also handles deployment sequencing between projects. I enhanced the tools by adding telemetry, enhanced error handling, and post deployment processing. Code covered DNS, Certificates, WAF/AppGw, AppServices, FunctionApps, KeyVault, SQL , Storage, Redis, App Registrations, Application Insights, LogAnalytics, App Configuration, RBAC, and more.
+    - Designed and Built a Managed Identity infrastructure to interact with the Azure API’s beyond the management plane which was required to implement configurations not currently exposed via ARM templates or cmdlets.
+    - Deployed Application Insights for an on-premise application whose stack included IIS, Apache, Python, and MySQL running on a mix of Linux and Windows servers.
+    - Simplified ARM templates to use direct keyvault references for App Services configuration settings. Added references to resources for retrieving keys, addresses, and domain validation codes.
+    - Designed a complete secrets management solution which included public key based secret storage in version control with a build and release pipeline. The pipeline handles the process of promoting values throughout the environment and was capable of update Azure App Services, Keyvault, and Azure App Configuration securely.
+    - Migrated existing company product to new resources in Azure with infrastructure code. Built data synchronization jobs in Azure Datafactory. Managed convergence of two infrastructure code branches and led the planning and execution of the cutover.
+    - Built pipelines for creating Virtual Machine OS images to support IaaS needs in Azure.  Leveraging existing Marketplace images, I developed a solution for customizing OS’s and publishing the image to Azure Compute Gallery for distribution using Azure DevOps and Packer.
+    - Started the process of implementing the Cloud Adoption Framework from Microsoft.  Beginning with creating new subscriptions and management groups for connectivity and management
+    Badges: ['Powershell', 'ARM Templates', 'Azure', 'Azure DevOps']
+- Employer: Infinite Campus
+  Place: Minnesota, US
+  Class: "experience__extra_padding"
+  Positions:
+  - Title: Cloud Hosting Lead
+    Date: May 2019 - Sep 2019
+    Details:
+    - Implemented PowerShell build pipeline using Bitbucket, Jenkins, and Artifactory including unit testing with Pester, code practices with PSScriptAnalyzer, and code signing.
+    - Built a PowerShell module to automate F5 configuration.
+    - Conducted a POC implementation of Terraform to provision infrastructure including vSphere, vRA/vRO, F5 LTM/GTM, Infoblox, and Chef.
+    - Introduced Rundeck for self service operations.
+    - Introduced Kanban for Cloud Engineering
+    Badges: ['Powershell', 'Terraform', 'Rundeck', 'Kanban']
+- Employer: CHS
+  Place: Minnesota, US
+  Class: "experience__extra_padding"
+  Positions:
+  - Title: DevOps Engineer
+    Date: Sep 2017 - May 2019
+    Details:
+    - Built SQL Server 2016 automation for installation, configuration, and validation which can run locally or remotely.
+    - Created a web service interface framework with for executing PowerShell scripts based off of a web request.
+    - Integrated message queue support for triggering scripts and executables.
+    - Implemented FormIO to provide web form based input to automation scripts.
+    - Created a build and release process for PowerShell scripts leveraging Git and TFS as source control, code analysis via PSScriptAnalyzer, Unit testing through Pester, code signing, Package generation and distribution with NuGet.
+    - Implemented Windows server package management using Chocolatey into our Configuration Management practice.
+    - Built deployment pipelines for managing our Windows 2008/SQL Server 2008 migration using Git, Azure DevOps, and Octopus Deploy. I built deployment and configuration pipelines for 3rd party software installations, SQL DDL deployments, Database migrations, Node.js applications, and infrastructure integration with AppDynamics, Netscaler load balancers, Active Directory, Thycotic Secret Server.
+    Badges: ['Powershell', 'Octopus Deploy', 'Azure DevOps', 'Node.js', 'SQL Server', 'Chocolatey', 'RabbitMQ']
+- Employer: Zurich North America
+  Place: Minnesota, US
+  Class: "experience__extra_padding"
+  Positions:
+  - Title: Infrastructure Architect
+    Date: May 2017 - Sep 2017
+    Details:
+    - Performed detailed case study for Infrastructure as a Service and Platform as a Service models to demonstrate the potential cost savings leveraging public cloud infrastructure.
+    - Built and deployed ARM templates for deploying consistent infrastructure.
+    - Designed and implemented hybrid cloud solution leveraging Microsoft’s Azure platform.
+    - Driving the network design solution for Office 365 connectivity.
+    - Leading the ISP model transformation for the Crop business to align with standard operating model.
+    Badges: ['Powershell', 'ARM Templates', 'o365', 'Azure']
+- Employer: Wells Fargo
+  Place: Minnesota, US
+  Class: "experience__extra_padding"
+  Positions:
+  - Title: Infrastructure Architect - RCIS
+    Date: May 2015 - May 2017
+    Details:
+    - Leading enterprise automation for IT Operations driving code reuse, best practice adoption and enforcement, source control, CMDB, and reporting. Working through automation of server startup/shutdown process as well as enhancing our Identity and Access Management processes.
+    - Lead the infrastructure team in our annual disaster recovery test, which completed in approximately 11 hours for all critical systems. Migrated from a tape based cold recovery model to a tapeless recovery model utilizing warm assets.  Successfully, achieved desired RPO of 24 hours and RTO of 72 hours.
+    - Created troubleshooting tools which collect data from Firewalls, Application Delivery Controllers, and Servers to identify failed infrastructure components.
+    - Implemented Windows Remote Management Framework to facilitate automation with PowerShell Remoting and completed a PowerShell Desired State Configuration proof of concept.
+    - Conducted Puppet for configuration management on our Windows platform pilot. Puppet handles installation packages and roles for out automation servers as well as distributing various scripts which automate our infrastructure.
+    - Wrote a native Powershell middleware framework which provides a web based front end to Powershell automation scripts. This enables integration with existing workflow tools, provides a web based user interface, and allows other integrations via web services.
+    - Lead weekly PowerShell Hackathon to resolve complex scripting issues while generating functional solutions. This collaboration session is attended by our most knowledgeable scripters in the company.
+    - Hold bi-weekly training sessions for scripting to help engineers without a scripting background get up and running with best practices, conventions, and deep understanding of scripting concepts.
+    - Developed a patch and update framework across all platforms to ensure all products are reviewed consistently for functional and security updates. We are currently managing 50 products with this framework including network appliances, product firmware, third party applications, database platforms, and our voice system. Solution is written in PowerShell and integrates with SharePoint, Exchange, and our ticketing system Heat.
+    Badges: ['Powershell', 'DR', 'Windows Server', 'Puppet', 'WinRM']
+  - Title: Technology Manager - RCIS
+    Date: Aug 2012 - May 2015
+    Details:
+    - Built and managed an Infrastructure Engineering team responsible for networking, storage, servers, virtualization, database, directory services, content management systems, telephony, and build engineering.
+    - Lead the technology refresh effort for enterprise storage replacing spinning storage with an All Flash Array based solution. Project included defining acceptance criteria, industry analysis, vendor interviews and demonstrations, and execution of a Proof of Concept test for validation of use cases. We focused acceptance criteria on administrative overhead, interactive/batch application performance, and operational efficiency gains on backup and restore functions.
+    - Lead a self-assessment project in advance of a scheduled IT audit to self-identify compliance issues and enhance our overall security posture. This included the granular access review for all database environments, windows security log aggregation, adding two factor authentication for administration of network devices and appliances, automated password rotation for privileged/unassigned accounts, and a firewall rule certification process.
+    - Administered a 5M dollar budget between 2012 and 2014 to within 3.5% of full year plan or better each year.
+    - Developed and published an annual infrastructure roadmap which was shared with senior management as well as peer organizations such as operations and development. This helped ensure alignment between organizations and provide critical insight for all teams related to current issues, resource demands, and service delivery.
+    - Built out a co-location facility primarily for disaster recovery enhancement and secondarily to position the company for geographic redundancy.
+    - Directed the development of internal application deployment solution to automate our deployment process, centralize event logging, guarantee integrity, remote administration, one-to-many deployment, and roll back capabilities.
+    - Implemented converged infrastructure solution for all datacenters. Modernized the server platform with blade servers and local aggregation switches including migration of all servers off Windows 2003 by May 2015. Consolidated our network by integrating voice, data and storage on Cisco’s nexus platform. Deployed a single storage product to provide block storage as well as CIFS/NFS/SFTP.
+    - Eliminated point to point connections and implemented MPLS wan technology to enhance resiliency. During the migration we implemented advanced QoS to prioritize voice and business applications traffic.
+    - Passed a significant and rigorous internal technology audit earning the highest rating ever given to RCIS. Functioned as the point of contact for all of infrastructure including Firewall, VPN, Routers, Switches, NIDS, AV, Configuration Management, Provisioning, Source Code Management, Automated build processes, Active Directory, and Citrix.
+
+    Badges: ['Converged Infrastructure', 'Enterprise Storage', 'Windows Server', 'Configuration Management']
+  - Title: Systems Engineer - RCIS
+    Date: Nov 2010 - Aug 2012
+    Details:
+    - Lead engineer on Application Delivery Controller selection and implementation effort. Implemented clustering, disaster recovery, two factor authentication, SSL offloading, port translation, connection pooling, application firewall, and content redirection on Citrix Netscaler 9.2. Migrated all NLB implementations over to ADC solution. Wrote Powershell tools to troubleshoot and report configuration status of all Netscaler appliances.
+    - Implemented HP Blade Server solution and introduced converged networking with HP Virtual Connect.
+    - Upgrade Citrix Presentation Server 5.0 to Citrix Xenapp 6.5 for all environments which included developing OS build process while upgrading to Windows 2008 R2. Rolled out new GPO’s to secure the environment and manage the configuration. Redesigned the farm configuration using server and user policies new in Xenapp 6.5. Separated controllers and session hosts for additional resiliency. Moved Secure Gateway/Web Interface servers behind load balancer and reverse proxied the connection to the internal network. Installed and configured two factor authentication solution for remote employee access using Microsoft Multifactor Authentication for Citrix Web Interface.  Implemented Session Recording and Edgesight to improve support and customer experience.
+    - Implemented Secure FTP solution to directly provide customers with data. Integrated solution with the Indentity Management platform to provide automated provisioning and de-provisioning of access. Designed integrated process with DBA team to dynamically deliver customer data via this channel through a subscription model. Implemented file monitors, ETL, and monitoring solutions in Powershell.
+    - Developed rolling update infrastructure processes for external applications. This process minimized disruption for customers while performing maintenance on Application, Presentation, and Database tiers.
+    Badges: ['Citrix XenApp', 'Netscaler', 'Powershell', 'Converged Infrastructure', 'Windows Server']
+  - Title: Technology Manager - Corperate Technologies
+    Date: Nov 2010 - Aug 2012
+    Details:
+    - Built and managed a team of 12 mid to senior level engineers and project managers doing application support and  infrastructure management for the Compliance and Enterprise Risk Management organization on a variety of solution stacks including .Net, Java, and proprietary applications.
+    - Created a service based support model for managing code deployment, configuration management, performance/capacity planning, and hardware engineering.
+    - Expanded support operations into India to provide increased support coverage which included resource planning, interviewing, and hiring. Worked closely with local management team to develop communication plans as well as establish a common desktop build for team members.
+    - Established a quarterly review of the infrastructure area designed to bring awareness to availability, performance, and management of the infrastructure as well as reporting metrics around problem tickets, change requests, work requests, and code deployments.
+    - Implemented a shared infrastructure model allowing applications to leverage common hardware and reduce new project expenses. One project saved an estimated $830,000 based on this approach.
+    - Built a unit level costing model for application support and code deployment
+    Badges: ['Citrix XenApp', 'Netscaler', 'Powershell', 'Converged Infrastructure', 'Windows Server']
+
+Education:
+- Course: Information Networking
+  Place: University of Minnesota
+  Date: Sep 1996 - Sep 1997
+  Details: A combination of Management Information Systems and Computer Science.  Did not complete degree program however did work on campus for the school and hands on experience provided more marketable qualifications.
+
+Skills:
+- Family: Programming
+  Items:
+  - Powershell
+  - Python
+  - Terraform
+  - ARM Templates/Bicep
+  - Bash
+- Family: DevOps Tools
+  Items:
+  - Azure DevOps
+  - Github
+  - Bitbucket
+  - Octopus Deploy
+- Family: Infrastructure
+  Items:
+  - Azure
+  - Windows
+  - Linux
+  - Citrix XenApp
+  - VMWare
+  - Netscaler
+  - Kubernetes
+
+Certificates:
+- Microsoft Azure Developer Associated (2023)
+- Hashicorp Certified Terraform Associate (2022)
+- ITIL v3 Foundation (2014)
+
+Interests:
+- Technology
+- Cooking
+- Travel
+- Football
+- Cars
