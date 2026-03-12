@@ -10,7 +10,7 @@ BasicInfo:
   - Icon: fab fa-linkedin-in
     Info: <a class="contact__link" href="https://www.linkedin.com/in/jason-brisbin-3955841/" target="_blank">LinkedIn</a>
   - Icon: fab fa-github
-    Info: <a class="contact__link" href="https://github.com/jasonbrisbin" target="_blank">Github</a>
+    Info: <a class="contact__link" href="https://github.com/jasonbrisbin/resumesite" target="_blank">Github</a>
   - Icon: fas fa-map-marker-alt
     Info: Minnesota
 
@@ -23,7 +23,7 @@ Experience:
   - Title: Senior DevOps Engineer
     Date: May 2024 - Current
     Details:
-    - Implemented and refactored Terraform code to deploy Azure Landing Zone infrastructure across multiple Tenants.
+    - Refactored Terraform code to deploy Azure Landing Zone infrastructure across multiple Tenants.
     - Redesigned and implemented vWAN in Azure using an Azure Firewall leveraging routing intent.
     - Engineered our internal DNS solution using the virtual hub extension pattern.
     - Built and deployed Azure DevOps agents on the private network using an ADO managed VMSS and the officialy runner images from Microsoft.
