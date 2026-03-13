@@ -23,17 +23,16 @@ Experience:
   - Title: Senior DevOps Engineer
     Date: May 2024 - Current
     Details:
-    - Refactored Terraform code to deploy Azure Landing Zone infrastructure across multiple Tenants.
-    - Redesigned and implemented vWAN in Azure using an Azure Firewall leveraging routing intent.
-    - Engineered our internal DNS solution using the virtual hub extension pattern.
-    - Built and deployed Azure DevOps agents on the private network using an ADO managed VMSS and the officialy runner images from Microsoft.
-    - Migrated from stand alone terraform CLI with shared state file to Terraform Cloud.  Created IaC to manage our Terraform Cloud organization including populating workspaces with deployment output
+    - Refactored Terraform code to deploy Azure Landing Zone infrastructure across multiple tenants and regions.
+    - Redesigned and implemented vWAN in Azure using Azure Firewall leveraging routing intent and an internal DNS solution using the virtual hub extension pattern.
+    - Built and deployed Azure DevOps agents on the private network using an ADO managed VMSS and the official runner images from Microsoft.
+    - Migrated from stand alone terraform CLI with shared state file to Terraform Cloud.  Created IaC to manage our Terraform Cloud organization including populating workspaces with deployment output.
     - Conducted POC to automate resource Tagging using Terratag to tie build and deployments to resources in the Azure control plane.
     - Automated PIM Setup and enrollment using Azure DevOps pipelines, Terraform, and Powershell to configure group options, eligible assignments, and owners.
     - Aligned the team around an agile methodology introducing Working Agreements, formalizing a Definition of Done, and then organizing our backlog by Epic, Feature, and User Stories based on priority and delivery commitments.
-    - Designed, developed, and implemented a least privilege access module for a multitenancy environment in postgres with Terraform.
+    - Designed, developed, and implemented a least privilege database access module for a multitenancy environment in postgres with Terraform.
     - Redesigned deployment processes moving to a gitflow type process, reconcilled more than 500 occurences of drift with running state , refactored pipelines to leverage templates, and added CI testing to IAC pipelines.
-    Badges: ['Azure DevOps', 'Azure', 'Terraform', 'Powershell', 'Kubernetes', 'Postgresql']
+    Badges: ['Azure DevOps', 'Azure', 'Terraform', 'Powershell', 'Postgresql']
 - Employer: iTrellis
   Place: Minnesota, US
   Positions:
