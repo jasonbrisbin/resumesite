@@ -6,9 +6,9 @@
     <title>{{ BasicInfo.FirstName }} {{ BasicInfo.LastName }} - DevOps Engineer</title>
 
     <link rel="canonical" href="https://jasonbrisbin.com/" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css" />
 
@@ -21,153 +21,129 @@
 </head>
 
 <body>
-    <div class="content">
 
-        <div class="content__left content__swapped__left">
-
-            <h1 class="mainHeading">{{ BasicInfo.FirstName }} <span>{{ BasicInfo.LastName }}</span></h1>
-
-            {# Profile #}
-            <div id="profile" class="section">
-                <div class="section__heading">
-                    <h2 class="section__title">Profile</h2>
-                </div>
-                <div class="section__content">
-                    <p>{{ Profile }}</p>
-                </div>
+    <header class="hero">
+        <div class="hero__inner">
+            <img class="hero__photo" src="{{ BasicInfo.Photo }}" alt="Photo of {{ BasicInfo.FirstName }} {{ BasicInfo.LastName }}">
+            <div class="hero__identity">
+                <h1 class="hero__name">{{ BasicInfo.FirstName }} <span class="hero__name--last">{{ BasicInfo.LastName }}</span></h1>
+                <p class="hero__title">Senior DevOps Engineer</p>
+                <nav class="hero__contacts" aria-label="Contact information">
+                    {% for contact in BasicInfo.Contacts %}
+                    <span class="hero__contact-item">
+                        <i class="{{ contact.Icon }}" aria-hidden="true"></i>
+                        <span class="hero__contact-info">{{ contact.Info }}</span>
+                    </span>
+                    {% endfor %}
+                </nav>
             </div>
+        </div>
+    </header>
 
-            {# Experience #}
-            <div id="experience" class="section">
-                <div class="section__heading">
-                    <h2 class="section__title">Experience</h2>
-                </div>
-                <div class="section__content">
-                    <div class="experience">
-                        {% for job in Experience %}
-                        <div class="experience__item{% if job.Class is defined %} {{ job.Class }}{% endif %}">
-                            <div class="experience__header">
-                                <h3 class="experience__company">{{ job.Employer }}</h3>
-                                <h3 class="experience__place">{{ job.Place }}</h3>
-                            </div>
-                            {% for position in job.Positions %}
-                            <div class="experience__job">
-                                <div class="experience__subheader">
-                                    <h3 class="experience__position">{{ position.Title }}</h3>
-                                    <h3 class="experience__date">{{ position.Date }}</h3>
-                                </div>
-                                <ul>
-                                    {% for detail in position.Details %}
-                                    <li class="experience__bullet">{{ detail }}</li>
-                                    {% endfor %}
-                                </ul>
-                                <div class="experience__badges">
-                                    <ul>
-                                        {% for badge in position.Badges %}
-                                        <li class="experience__badge">{{ badge }}</li>
-                                        {% endfor %}
-                                    </ul>
-                                </div>
-                            </div>
+    <main class="resume">
+
+        {# Profile #}
+        <section id="profile" class="section">
+            <h2 class="section__title">Profile</h2>
+            <div class="section__body">
+                <p>{{ Profile }}</p>
+            </div>
+        </section>
+
+        {# Experience #}
+        <section id="experience" class="section">
+            <h2 class="section__title">Experience</h2>
+            <div class="section__body">
+                {% for job in Experience %}
+                <article class="job">
+                    <header class="job__header">
+                        <h3 class="job__employer">{{ job.Employer }}</h3>
+                        <span class="job__place">
+                            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                            {{ job.Place }}
+                        </span>
+                    </header>
+                    {% for position in job.Positions %}
+                    <div class="job__position">
+                        <div class="job__position-header">
+                            <h4 class="job__title">{{ position.Title }}</h4>
+                            <span class="job__date">{{ position.Date }}</span>
+                        </div>
+                        {% if position.Details %}
+                        <ul class="job__bullets">
+                            {% for detail in position.Details %}
+                            <li>{{ detail }}</li>
+                            {% endfor %}
+                        </ul>
+                        {% endif %}
+                        {% if position.Badges %}
+                        <div class="job__badges" aria-label="Technologies used">
+                            {% for badge in position.Badges %}
+                            <span class="badge">{{ badge }}</span>
                             {% endfor %}
                         </div>
-                        {% endfor %}
-                    </div>
-                </div>
-            </div>
-
-            {# Education #}
-            <div id="education" class="section">
-                <div class="section__heading">
-                    <h2 class="section__title">Education</h2>
-                </div>
-                <div class="section__content">
-                    {% for edu in Education %}
-                    <div class="education__item">
-                        <h3 class="education__title">{{ edu.Course }}</h3>
-                        <h4 class="education__place">{{ edu.Place }}</h4>
-                        <h4 class="education__date">{{ edu.Date }}</h4>
-                        <div class="education__description">{{ edu.Details }}</div>
+                        {% endif %}
                     </div>
                     {% endfor %}
-                </div>
+                </article>
+                {% endfor %}
             </div>
+        </section>
 
-        </div>
-
-        <div class="content__right content__swapped__right">
-
-            {# Avatar #}
-            <div class="sideSection avatar">
-                <div class="avatar__container">
-                    <img class="avatar__img" src="{{ BasicInfo.Photo }}" alt="photo of me">
-                </div>
-            </div>
-
-            {# Contact #}
-            <div class="sideSection contact">
-                <ul>
-                    {% for contact in BasicInfo.Contacts %}
-                    <li class="contact__item">
-                        <i class="{{ contact.Icon }}"></i><span>{{ contact.Info }}</span>
-                    </li>
-                    {% endfor %}
-                </ul>
-            </div>
-
-            {# Skills #}
-            <div class="sideSection">
-                <div class="sideSection__heading">
-                    <h2 class="sideSection__title">Skills</h2>
-                </div>
-                <div class="sideSection__content">
-                    <ul class="skills">
-                        <li>
-                            {% for family in Skills %}
-                            <ul class="skills__group">
-                                <span>{{ family.Family }}</span>
-                                <br>
-                                {% for item in family.Items %}
-                                <li>{{ item }}</li>
-                                {% endfor %}
-                            </ul>
+        {# Skills #}
+        <section id="skills" class="section">
+            <h2 class="section__title">Skills</h2>
+            <div class="section__body">
+                <div class="skills">
+                    {% for family in Skills %}
+                    <div class="skills__family">
+                        <span class="skills__family-name">{{ family.Family }}</span>
+                        <div class="skills__items">
+                            {% for item in family.Items %}
+                            <span class="skill-tag">{{ item }}</span>
                             {% endfor %}
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
+                    {% endfor %}
                 </div>
             </div>
+        </section>
 
-            {# Certificates #}
+        {# Bottom grid: Certificates | Education #}
+        <div class="bottom-grid">
+
             {% if Certificates %}
-            <div class="sideSection">
-                <div class="sideSection__heading">
-                    <h2 class="sideSection__title">Certificates</h2>
-                </div>
-                <div class="sideSection__content">
-                    <ul class="certificates">
+            <section id="certificates" class="section section--compact">
+                <h2 class="section__title">Certificates</h2>
+                <div class="section__body">
+                    <ul class="certs">
                         {% for cert in Certificates %}
-                        <li class="interests__item">{{ cert }}</li>
+                        <li class="cert__item">{{ cert }}</li>
                         {% endfor %}
                     </ul>
                 </div>
-            </div>
+            </section>
             {% endif %}
 
-            {# Interests #}
-            <div class="sideSection">
-                <div class="sideSection__heading">
-                    <h2 class="sideSection__title">Interests</h2>
+            <section id="education" class="section section--compact">
+                <h2 class="section__title">Education</h2>
+                <div class="section__body">
+                    {% for edu in Education %}
+                    <div class="education__item">
+                        <h3 class="education__course">{{ edu.Course }}</h3>
+                        <p class="education__place">{{ edu.Place }}</p>
+                        <p class="education__date">{{ edu.Date }}</p>
+                        {% if edu.Details %}
+                        <p class="education__details">{{ edu.Details }}</p>
+                        {% endif %}
+                    </div>
+                    {% endfor %}
                 </div>
-                <div class="sideSection__content">
-                    <ul class="interests">
-                        {% for interest in Interests %}
-                        <li class="interests__item">{{ interest }}</li>
-                        {% endfor %}
-                    </ul>
-                </div>
-            </div>
+            </section>
 
         </div>
-    </div>
+
+    </main>
+
 </body>
 </html>
