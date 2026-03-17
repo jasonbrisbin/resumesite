@@ -4,7 +4,7 @@ A static resume site built with Python, Jinja2, and deployed automatically to Az
 
 ## Background
 
-This project replaced a previous Hugo-based site ([archived here](https://github.com/jbrisbin/blog)) that had grown unnecessarily complex for what was ultimately a single-page resume.
+This project replaced a previous Hugo-based site that had grown unnecessarily complex for what was ultimately a single-page resume.
 
 The Hugo setup required:
 - A pinned Hugo binary (v0.92.0), Node.js, and Docker just to run locally
