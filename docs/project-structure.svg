@@ -1,0 +1,247 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 760" width="700" height="760" font-family="Inter, system-ui, sans-serif">
+
+  <defs>
+    <linearGradient id="pageBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f4f5f7"/>
+      <stop offset="100%" stop-color="#eceef2"/>
+    </linearGradient>
+    <filter id="panelshadow" x="-2%" y="-1%" width="106%" height="103%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#00000012"/>
+    </filter>
+  </defs>
+
+  <rect width="700" height="760" fill="url(#pageBg)"/>
+
+  <!-- Subtle grid -->
+  <g opacity="0.05" stroke="#000" stroke-width="1">
+    <line x1="0" y1="80" x2="700" y2="80"/>
+    <line x1="0" y1="160" x2="700" y2="160"/>
+    <line x1="0" y1="240" x2="700" y2="240"/>
+    <line x1="0" y1="320" x2="700" y2="320"/>
+    <line x1="0" y1="400" x2="700" y2="400"/>
+    <line x1="0" y1="480" x2="700" y2="480"/>
+    <line x1="0" y1="560" x2="700" y2="560"/>
+    <line x1="0" y1="640" x2="700" y2="640"/>
+    <line x1="0" y1="720" x2="700" y2="720"/>
+    <line x1="175" y1="0" x2="175" y2="760"/>
+    <line x1="350" y1="0" x2="350" y2="760"/>
+    <line x1="525" y1="0" x2="525" y2="760"/>
+  </g>
+
+  <!-- Title -->
+  <text x="350" y="28" text-anchor="middle" font-family="Oswald, sans-serif" font-size="14" font-weight="600" fill="#4a1e9e" letter-spacing="4">PROJECT STRUCTURE</text>
+  <text x="350" y="44" text-anchor="middle" font-size="10" fill="#888888" letter-spacing="1">resumesite/ — folders first, then files, A–Z</text>
+
+  <!-- Tree panel -->
+  <rect x="24" y="56" width="652" height="648" rx="8" fill="#ffffff" filter="url(#panelshadow)"/>
+  <rect x="24" y="56" width="4" height="648" rx="2" fill="#4a1e9e"/>
+
+  <!--
+    Row height: 28px
+    Row centers: y = 74 + (n-1)*28
+
+     1  resumesite/            y=74
+     2    .claude/             y=102
+     3      skills/            y=130
+     4        build/           y=158
+     5          SKILL.md       y=186
+     6      settings.local.json y=214
+     7    .github/             y=242
+     8      workflows/         y=270
+     9        deploy.yml       y=298
+    10    docs/                y=326
+    11      build-pipeline.svg y=354
+    12      project-structure.svg y=382
+    13    src/                 y=410
+    14      img/               y=438
+    15      content.yaml       y=466
+    16      style.css          y=494
+    17      template.html      y=522
+    18    .gitignore           y=550
+    19    CLAUDE.md            y=578
+    20    README.md            y=606
+    21    build.py             y=634
+    22    requirements.txt     y=662
+  -->
+
+  <!-- ══ VERTICAL CONNECTOR LINES ══ -->
+
+  <!-- L1: root → requirements.txt -->
+  <line x1="40" y1="74"  x2="40" y2="662" stroke="#d8d8d8" stroke-width="1.5"/>
+
+  <!-- L2 under .claude -->
+  <line x1="68" y1="102" x2="68" y2="214" stroke="#d8d8d8" stroke-width="1.5"/>
+  <!-- L3 under skills -->
+  <line x1="96" y1="130" x2="96" y2="158" stroke="#d8d8d8" stroke-width="1.5"/>
+  <!-- L4 under build -->
+  <line x1="124" y1="158" x2="124" y2="186" stroke="#d8d8d8" stroke-width="1.5"/>
+
+  <!-- L2 under .github -->
+  <line x1="68" y1="242" x2="68" y2="270" stroke="#d8d8d8" stroke-width="1.5"/>
+  <!-- L3 under workflows -->
+  <line x1="96" y1="270" x2="96" y2="298" stroke="#d8d8d8" stroke-width="1.5"/>
+
+  <!-- L2 under docs -->
+  <line x1="68" y1="326" x2="68" y2="382" stroke="#d8d8d8" stroke-width="1.5"/>
+
+  <!-- L2 under src -->
+  <line x1="68" y1="410" x2="68" y2="522" stroke="#d8d8d8" stroke-width="1.5"/>
+
+  <!-- ══ HORIZONTAL ELBOWS ══ -->
+
+  <!-- L1 items -->
+  <line x1="40" y1="102" x2="56" y2="102" stroke="#d8d8d8" stroke-width="1.5"/>
+  <line x1="40" y1="242" x2="56" y2="242" stroke="#d8d8d8" stroke-width="1.5"/>
+  <line x1="40" y1="326" x2="56" y2="326" stroke="#d8d8d8" stroke-width="1.5"/>
+  <line x1="40" y1="410" x2="56" y2="410" stroke="#d8d8d8" stroke-width="1.5"/>
+  <line x1="40" y1="550" x2="56" y2="550" stroke="#d8d8d8" stroke-width="1.5"/>
+  <line x1="40" y1="578" x2="56" y2="578" stroke="#d8d8d8" stroke-width="1.5"/>
+  <line x1="40" y1="606" x2="56" y2="606" stroke="#d8d8d8" stroke-width="1.5"/>
+  <line x1="40" y1="634" x2="56" y2="634" stroke="#d8d8d8" stroke-width="1.5"/>
+  <line x1="40" y1="662" x2="56" y2="662" stroke="#d8d8d8" stroke-width="1.5"/>
+
+  <!-- L2 under .claude -->
+  <line x1="68" y1="130" x2="84" y2="130" stroke="#d8d8d8" stroke-width="1.5"/>
+  <line x1="68" y1="214" x2="84" y2="214" stroke="#d8d8d8" stroke-width="1.5"/>
+
+  <!-- L2 under .github -->
+  <line x1="68" y1="270" x2="84" y2="270" stroke="#d8d8d8" stroke-width="1.5"/>
+
+  <!-- L2 under docs -->
+  <line x1="68" y1="354" x2="84" y2="354" stroke="#d8d8d8" stroke-width="1.5"/>
+  <line x1="68" y1="382" x2="84" y2="382" stroke="#d8d8d8" stroke-width="1.5"/>
+
+  <!-- L2 under src -->
+  <line x1="68" y1="438" x2="84" y2="438" stroke="#d8d8d8" stroke-width="1.5"/>
+  <line x1="68" y1="466" x2="84" y2="466" stroke="#d8d8d8" stroke-width="1.5"/>
+  <line x1="68" y1="494" x2="84" y2="494" stroke="#d8d8d8" stroke-width="1.5"/>
+  <line x1="68" y1="522" x2="84" y2="522" stroke="#d8d8d8" stroke-width="1.5"/>
+
+  <!-- L3 under skills -->
+  <line x1="96" y1="158" x2="112" y2="158" stroke="#d8d8d8" stroke-width="1.5"/>
+  <!-- L3 under workflows -->
+  <line x1="96" y1="298" x2="112" y2="298" stroke="#d8d8d8" stroke-width="1.5"/>
+  <!-- L4 under build -->
+  <line x1="124" y1="186" x2="140" y2="186" stroke="#d8d8d8" stroke-width="1.5"/>
+
+
+  <!-- ══════════════════════════════════════
+       FILE / FOLDER ROWS
+  ══════════════════════════════════════ -->
+
+  <!-- Row 1: resumesite/ -->
+  <text x="32" y="79"  font-size="13">📁</text>
+  <text x="50" y="80"  font-size="11" fill="#4a1e9e" font-weight="700">resumesite/</text>
+
+  <!-- Row 2: .claude/ -->
+  <text x="60" y="107" font-size="12">📁</text>
+  <text x="78" y="108" font-size="10" fill="#d97706" font-weight="700">.claude/</text>
+  <text x="330" y="108" font-size="9" fill="#aaaaaa">Claude Code configuration</text>
+
+  <!-- Row 3: skills/ -->
+  <text x="88" y="135" font-size="11">📁</text>
+  <text x="106" y="136" font-size="10" fill="#d97706" font-weight="600">skills/</text>
+
+  <!-- Row 4: build/ -->
+  <text x="116" y="163" font-size="11">📁</text>
+  <text x="134" y="164" font-size="10" fill="#d97706" font-weight="600">build/</text>
+
+  <!-- Row 5: SKILL.md -->
+  <text x="144" y="191" font-size="11">📝</text>
+  <text x="162" y="192" font-size="10" fill="#555555" font-weight="500">SKILL.md</text>
+  <text x="330" y="192" font-size="9" fill="#aaaaaa">Custom /build skill definition</text>
+
+  <!-- Row 6: settings.local.json -->
+  <text x="88" y="219" font-size="10" fill="#b45309">{ }</text>
+  <text x="106" y="220" font-size="10" fill="#b45309" font-weight="500">settings.local.json</text>
+  <text x="330" y="220" font-size="9" fill="#aaaaaa">Claude Code local settings</text>
+
+  <!-- Row 7: .github/ -->
+  <text x="60" y="247" font-size="12">📁</text>
+  <text x="78" y="248" font-size="10" fill="#24292f" font-weight="700">.github/</text>
+
+  <!-- Row 8: workflows/ -->
+  <text x="88" y="275" font-size="11">📁</text>
+  <text x="106" y="276" font-size="10" fill="#24292f" font-weight="600">workflows/</text>
+
+  <!-- Row 9: deploy.yml -->
+  <text x="116" y="303" font-size="11">⚙</text>
+  <text x="134" y="304" font-size="10" fill="#1a7f37" font-weight="500">deploy.yml</text>
+  <text x="330" y="304" font-size="9" fill="#aaaaaa">GitHub Actions CI/CD pipeline</text>
+
+  <!-- Row 10: docs/ -->
+  <text x="60" y="331" font-size="12">📁</text>
+  <text x="78" y="332" font-size="10" fill="#0891b2" font-weight="700">docs/</text>
+
+  <!-- Row 11: build-pipeline.svg -->
+  <text x="88" y="359" font-size="11">🖼</text>
+  <text x="106" y="360" font-size="10" fill="#0891b2" font-weight="500">build-pipeline.svg</text>
+  <text x="330" y="360" font-size="9" fill="#aaaaaa">CI/CD pipeline diagram</text>
+
+  <!-- Row 12: project-structure.svg -->
+  <text x="88" y="387" font-size="11">🖼</text>
+  <text x="106" y="388" font-size="10" fill="#0891b2" font-weight="500">project-structure.svg</text>
+  <text x="330" y="388" font-size="9" fill="#aaaaaa">This diagram</text>
+
+  <!-- Row 13: src/ -->
+  <text x="60" y="415" font-size="12">📁</text>
+  <text x="78" y="416" font-size="10" fill="#4a1e9e" font-weight="700">src/</text>
+  <text x="330" y="416" font-size="9" fill="#aaaaaa">Source files</text>
+
+  <!-- Row 14: img/ (under src) -->
+  <text x="88" y="443" font-size="11">📁</text>
+  <text x="106" y="444" font-size="10" fill="#888888" font-weight="600">img/</text>
+
+  <!-- Row 15: content.yaml -->
+  <text x="88" y="471" font-size="11">📋</text>
+  <text x="106" y="472" font-size="10" fill="#92700a" font-weight="600">content.yaml</text>
+  <text x="330" y="472" font-size="9" fill="#aaaaaa">Resume data — single source of truth</text>
+
+  <!-- Row 16: style.css -->
+  <text x="88" y="499" font-size="11">🎨</text>
+  <text x="106" y="500" font-size="10" fill="#4a1e9e" font-weight="600">style.css</text>
+  <text x="330" y="500" font-size="9" fill="#aaaaaa">Site stylesheet</text>
+
+  <!-- Row 17: template.html -->
+  <text x="88" y="527" font-size="11">📄</text>
+  <text x="106" y="528" font-size="10" fill="#1d4ed8" font-weight="600">template.html</text>
+  <text x="330" y="528" font-size="9" fill="#aaaaaa">Jinja2 HTML template</text>
+
+  <!-- Row 18: .gitignore -->
+  <text x="60" y="555" font-size="11">🚫</text>
+  <text x="78" y="556" font-size="10" fill="#666666" font-weight="500">.gitignore</text>
+  <text x="330" y="556" font-size="9" fill="#aaaaaa">Excludes dist/ and build artifacts</text>
+
+  <!-- Row 19: CLAUDE.md -->
+  <text x="60" y="583" font-size="11">📝</text>
+  <text x="78" y="584" font-size="10" fill="#d97706" font-weight="600">CLAUDE.md</text>
+  <text x="330" y="584" font-size="9" fill="#aaaaaa">Project instructions for Claude Code</text>
+
+  <!-- Row 20: README.md -->
+  <text x="60" y="611" font-size="11">📝</text>
+  <text x="78" y="612" font-size="10" fill="#555555" font-weight="500">README.md</text>
+  <text x="330" y="612" font-size="9" fill="#aaaaaa">Project documentation</text>
+
+  <!-- Row 21: build.py -->
+  <text x="60" y="639" font-size="11">🐍</text>
+  <text x="78" y="640" font-size="10" fill="#15803d" font-weight="600">build.py</text>
+  <text x="330" y="640" font-size="9" fill="#aaaaaa">Build script: YAML → Jinja2 → dist/</text>
+
+  <!-- Row 22: requirements.txt -->
+  <text x="60" y="667" font-size="11">📦</text>
+  <text x="78" y="668" font-size="10" fill="#444444" font-weight="500">requirements.txt</text>
+  <text x="330" y="668" font-size="9" fill="#aaaaaa">PyYAML · Jinja2</text>
+
+
+  <!-- ══ LEGEND ══ -->
+  <rect x="24" y="718" width="652" height="30" rx="6" fill="#ffffff" stroke="#e8e8e8" stroke-width="1"/>
+  <rect x="44"  y="729" width="8" height="8" rx="1" fill="#d97706"/><text x="58"  y="737" font-size="8.5" fill="#444">.claude</text>
+  <rect x="112" y="729" width="8" height="8" rx="1" fill="#24292f"/><text x="126" y="737" font-size="8.5" fill="#444">.github</text>
+  <rect x="184" y="729" width="8" height="8" rx="1" fill="#4a1e9e"/><text x="198" y="737" font-size="8.5" fill="#444">src</text>
+  <rect x="228" y="729" width="8" height="8" rx="1" fill="#0891b2"/><text x="242" y="737" font-size="8.5" fill="#444">docs</text>
+  <rect x="282" y="729" width="8" height="8" rx="1" fill="#16a34a"/><text x="296" y="737" font-size="8.5" fill="#444">build</text>
+  <rect x="336" y="729" width="8" height="8" rx="1" fill="#1d4ed8"/><text x="350" y="737" font-size="8.5" fill="#444">.html</text>
+  <rect x="390" y="729" width="8" height="8" rx="1" fill="#e2bf2b"/><text x="404" y="737" font-size="8.5" fill="#444">.yaml</text>
+  <rect x="452" y="729" width="8" height="8" rx="1" fill="#b45309"/><text x="466" y="737" font-size="8.5" fill="#444">.json</text>
+
+</svg>

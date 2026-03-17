@@ -1,0 +1,289 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 580" width="960" height="580" font-family="Inter, system-ui, sans-serif">
+
+  <defs>
+    <linearGradient id="pageBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f4f5f7"/>
+      <stop offset="100%" stop-color="#eceef2"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e2bf2b"/>
+      <stop offset="100%" stop-color="#c9a41e"/>
+    </linearGradient>
+    <linearGradient id="purpleGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5c2ec0"/>
+      <stop offset="100%" stop-color="#4a1e9e"/>
+    </linearGradient>
+
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#c9a41e"/>
+    </marker>
+
+    <filter id="cardshadow" x="-4%" y="-4%" width="115%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#00000014"/>
+    </filter>
+    <filter id="titleshadow" x="-4%" y="-4%" width="115%" height="120%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#00000018"/>
+    </filter>
+  </defs>
+
+  <!-- Page background -->
+  <rect width="960" height="580" fill="url(#pageBg)"/>
+
+  <!-- Subtle grid -->
+  <g opacity="0.06" stroke="#000000" stroke-width="1">
+    <line x1="0" y1="72" x2="960" y2="72"/>
+    <line x1="0" y1="144" x2="960" y2="144"/>
+    <line x1="0" y1="216" x2="960" y2="216"/>
+    <line x1="0" y1="288" x2="960" y2="288"/>
+    <line x1="0" y1="360" x2="960" y2="360"/>
+    <line x1="0" y1="432" x2="960" y2="432"/>
+    <line x1="0" y1="504" x2="960" y2="504"/>
+    <line x1="120" y1="0" x2="120" y2="580"/>
+    <line x1="240" y1="0" x2="240" y2="580"/>
+    <line x1="360" y1="0" x2="360" y2="580"/>
+    <line x1="480" y1="0" x2="480" y2="580"/>
+    <line x1="600" y1="0" x2="600" y2="580"/>
+    <line x1="720" y1="0" x2="720" y2="580"/>
+    <line x1="840" y1="0" x2="840" y2="580"/>
+  </g>
+
+  <!-- ═══════════════ TITLE ═══════════════ -->
+  <text x="480" y="36" text-anchor="middle" font-family="Oswald, sans-serif" font-size="20" font-weight="600" fill="#4a1e9e" letter-spacing="4">BUILD &amp; DEPLOY PIPELINE</text>
+  <text x="480" y="54" text-anchor="middle" font-size="11" fill="#888888" letter-spacing="1">resumesite · jasonbrisbin.com</text>
+
+  <!-- Pipeline track line -->
+  <line x1="48" y1="290" x2="912" y2="290" stroke="#e2bf2b" stroke-width="1.5" stroke-dasharray="4,6" opacity="0.35"/>
+
+
+  <!-- ═══════════════════════════════════════════════════
+       ZONE 1 — LOCAL
+  ═══════════════════════════════════════════════════ -->
+  <rect x="24" y="72" width="178" height="420" rx="8" fill="#ffffff" stroke="#e2bf2b" stroke-width="1.5" filter="url(#cardshadow)"/>
+  <!-- Zone header -->
+  <rect x="24" y="72" width="178" height="32" rx="8" fill="#e2bf2b"/>
+  <rect x="24" y="88" width="178" height="16" fill="#e2bf2b"/>
+  <text x="113" y="92" text-anchor="middle" font-size="9" fill="#ffffff" letter-spacing="3" font-weight="700">LOCAL</text>
+
+  <!-- content.yaml -->
+  <rect x="42" y="118" width="142" height="70" rx="5" fill="#fffbeb" stroke="#e2bf2b" stroke-width="1.5" filter="url(#titleshadow)"/>
+  <rect x="42" y="118" width="142" height="20" rx="5" fill="#e2bf2b" opacity="0.2"/>
+  <rect x="42" y="130" width="142" height="8" fill="#e2bf2b" opacity="0.2"/>
+  <text x="113" y="132" text-anchor="middle" font-size="9" fill="#92700a" font-weight="700">content.yaml</text>
+  <text x="57" y="150" font-size="8" fill="#666666">BasicInfo</text>
+  <text x="57" y="162" font-size="8" fill="#666666">Profile · Experience</text>
+  <text x="57" y="174" font-size="8" fill="#666666">Skills · Certs · Education</text>
+
+  <!-- template.html -->
+  <rect x="42" y="202" width="142" height="56" rx="5" fill="#eff6ff" stroke="#2563eb" stroke-width="1" filter="url(#titleshadow)"/>
+  <rect x="42" y="202" width="142" height="18" rx="5" fill="#2563eb" opacity="0.12"/>
+  <rect x="42" y="212" width="142" height="8" fill="#2563eb" opacity="0.12"/>
+  <text x="113" y="215" text-anchor="middle" font-size="9" fill="#1d4ed8" font-weight="700">template.html</text>
+  <text x="57" y="232" font-size="8" fill="#666666">Jinja2 template</text>
+  <text x="57" y="244" font-size="8" fill="#888888">&#123;&#123; variables &#125;&#125;</text>
+
+  <!-- style.css -->
+  <rect x="42" y="270" width="142" height="44" rx="5" fill="#faf5ff" stroke="#4a1e9e" stroke-width="1" filter="url(#titleshadow)"/>
+  <rect x="42" y="270" width="142" height="16" rx="5" fill="#4a1e9e" opacity="0.1"/>
+  <rect x="42" y="278" width="142" height="8" fill="#4a1e9e" opacity="0.1"/>
+  <text x="113" y="282" text-anchor="middle" font-size="9" fill="#4a1e9e" font-weight="700">style.css</text>
+  <text x="57" y="300" font-size="8" fill="#666666">purple · gold · Inter · Oswald</text>
+
+  <!-- build.py -->
+  <rect x="42" y="326" width="142" height="44" rx="5" fill="#f0fdf4" stroke="#16a34a" stroke-width="1" filter="url(#titleshadow)"/>
+  <rect x="42" y="326" width="142" height="16" rx="5" fill="#16a34a" opacity="0.1"/>
+  <rect x="42" y="334" width="142" height="8" fill="#16a34a" opacity="0.1"/>
+  <text x="113" y="338" text-anchor="middle" font-size="9" fill="#15803d" font-weight="700">build.py</text>
+  <text x="57" y="356" font-size="8" fill="#666666">yaml → Jinja2 → dist/</text>
+
+  <!-- requirements.txt -->
+  <rect x="42" y="382" width="142" height="36" rx="5" fill="#f8f9fa" stroke="#cccccc" stroke-width="1"/>
+  <text x="113" y="399" text-anchor="middle" font-size="9" fill="#555555" font-weight="600">requirements.txt</text>
+  <text x="113" y="411" text-anchor="middle" font-size="8" fill="#888888">PyYAML · Jinja2</text>
+
+  <!-- git push -->
+  <rect x="60" y="432" width="106" height="26" rx="13" fill="url(#goldGrad)"/>
+  <text x="113" y="449" text-anchor="middle" font-size="10" fill="#ffffff" font-weight="700" letter-spacing="1">git push master</text>
+
+
+  <!-- ═══════════════════════════════════════════════════
+       ARROW 1
+  ═══════════════════════════════════════════════════ -->
+  <line x1="204" y1="290" x2="248" y2="290" stroke="#c9a41e" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="226" y="283" text-anchor="middle" font-size="8" fill="#c9a41e" font-weight="600">push</text>
+
+
+  <!-- ═══════════════════════════════════════════════════
+       ZONE 2 — GITHUB
+  ═══════════════════════════════════════════════════ -->
+  <rect x="252" y="72" width="192" height="420" rx="8" fill="#ffffff" stroke="#24292f" stroke-width="1.5" filter="url(#cardshadow)"/>
+  <rect x="252" y="72" width="192" height="32" rx="8" fill="#24292f"/>
+  <rect x="252" y="88" width="192" height="16" fill="#24292f"/>
+  <text x="348" y="92" text-anchor="middle" font-size="9" fill="#ffffff" letter-spacing="3" font-weight="700">GITHUB</text>
+
+  <!-- Octocat circle -->
+  <circle cx="348" cy="148" r="28" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="348" y="155" text-anchor="middle" font-size="26">🐙</text>
+
+  <text x="348" y="192" text-anchor="middle" font-size="9" fill="#24292f" font-weight="600">resumesite</text>
+  <text x="348" y="205" text-anchor="middle" font-size="8" fill="#57606a">branch: master</text>
+
+  <!-- on: push trigger -->
+  <rect x="274" y="220" width="148" height="28" rx="4" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+  <text x="348" y="233" text-anchor="middle" font-size="8" fill="#1a7f37" font-weight="700">on: push → master</text>
+  <text x="348" y="243" text-anchor="middle" font-size="8" fill="#57606a">deploy.yml triggers</text>
+
+  <!-- Secrets -->
+  <rect x="274" y="260" width="148" height="48" rx="4" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="348" y="276" text-anchor="middle" font-size="9" fill="#24292f" font-weight="600">Secrets</text>
+  <text x="282" y="292" font-size="7.5" fill="#57606a">AZURE_STATIC_WEB_APPS_API_TOKEN</text>
+  <text x="282" y="303" font-size="7.5" fill="#57606a">GITHUB_TOKEN</text>
+
+  <!-- Actions box -->
+  <rect x="274" y="320" width="148" height="100" rx="4" fill="#f6f8fa" stroke="#0969da" stroke-width="1"/>
+  <text x="348" y="336" text-anchor="middle" font-size="8" fill="#0969da" font-weight="700">GitHub Actions</text>
+  <text x="348" y="348" text-anchor="middle" font-size="8" fill="#57606a">ubuntu-latest runner</text>
+  <line x1="274" y1="353" x2="422" y2="353" stroke="#d0d7de" stroke-width="1"/>
+
+  <rect x="284" y="358" width="128" height="14" rx="3" fill="#ddf4ff"/>
+  <text x="348" y="368" text-anchor="middle" font-size="8" fill="#0969da">① actions/checkout@v4</text>
+
+  <rect x="284" y="376" width="128" height="14" rx="3" fill="#ddf4ff"/>
+  <text x="348" y="386" text-anchor="middle" font-size="8" fill="#0969da">② setup-python@v5 · 3.12</text>
+
+  <rect x="284" y="394" width="128" height="14" rx="3" fill="#ddf4ff"/>
+  <text x="348" y="404" text-anchor="middle" font-size="8" fill="#0969da">③ pip install -r requirements</text>
+
+  <text x="348" y="440" text-anchor="middle" font-size="8" fill="#888888">workflow: deploy.yml</text>
+
+
+  <!-- ═══════════════════════════════════════════════════
+       ARROW 2
+  ═══════════════════════════════════════════════════ -->
+  <line x1="446" y1="290" x2="488" y2="290" stroke="#c9a41e" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="467" y="283" text-anchor="middle" font-size="8" fill="#c9a41e" font-weight="600">run</text>
+
+
+  <!-- ═══════════════════════════════════════════════════
+       ZONE 3 — BUILD
+  ═══════════════════════════════════════════════════ -->
+  <rect x="492" y="72" width="192" height="420" rx="8" fill="#ffffff" stroke="#16a34a" stroke-width="1.5" filter="url(#cardshadow)"/>
+  <rect x="492" y="72" width="192" height="32" rx="8" fill="#16a34a"/>
+  <rect x="492" y="88" width="192" height="16" fill="#16a34a"/>
+  <text x="588" y="92" text-anchor="middle" font-size="9" fill="#ffffff" letter-spacing="3" font-weight="700">BUILD</text>
+
+  <!-- Python circle -->
+  <circle cx="588" cy="140" r="28" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="588" y="148" text-anchor="middle" font-size="26">🐍</text>
+
+  <!-- python build.py -->
+  <rect x="512" y="178" width="152" height="20" rx="4" fill="#f0fdf4" stroke="#16a34a" stroke-width="1"/>
+  <text x="588" y="192" text-anchor="middle" font-size="9" fill="#15803d" font-family="monospace" font-weight="600">python build.py</text>
+
+  <!-- Inputs -->
+  <text x="514" y="222" font-size="8" fill="#888888" font-weight="600">Input</text>
+  <rect x="514" y="226" width="62" height="14" rx="3" fill="#fffbeb" stroke="#e2bf2b" stroke-width="1"/>
+  <text x="545" y="236" text-anchor="middle" font-size="7.5" fill="#92700a">content.yaml</text>
+  <rect x="514" y="244" width="62" height="14" rx="3" fill="#eff6ff" stroke="#2563eb" stroke-width="1"/>
+  <text x="545" y="254" text-anchor="middle" font-size="7.5" fill="#1d4ed8">template.html</text>
+  <rect x="514" y="262" width="62" height="14" rx="3" fill="#faf5ff" stroke="#4a1e9e" stroke-width="1"/>
+  <text x="545" y="272" text-anchor="middle" font-size="7.5" fill="#4a1e9e">style.css</text>
+  <rect x="514" y="280" width="62" height="14" rx="3" fill="#faf5ff" stroke="#4a1e9e" stroke-width="1"/>
+  <text x="545" y="290" text-anchor="middle" font-size="7.5" fill="#4a1e9e">img/</text>
+
+  <!-- Jinja2 engine -->
+  <rect x="588" y="230" width="88" height="64" rx="5" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="632" y="249" text-anchor="middle" font-size="8" fill="#15803d" font-weight="700">Jinja2</text>
+  <text x="632" y="262" text-anchor="middle" font-size="7.5" fill="#555555">yaml.safe_load()</text>
+  <text x="632" y="274" text-anchor="middle" font-size="7.5" fill="#555555">env.get_template()</text>
+  <text x="632" y="286" text-anchor="middle" font-size="7.5" fill="#555555">template.render(**data)</text>
+
+  <!-- Arrow inputs → jinja2 -->
+  <line x1="577" y1="260" x2="587" y2="260" stroke="#16a34a" stroke-width="1" marker-end="url(#arrow)" opacity="0.6"/>
+
+  <!-- Output -->
+  <text x="514" y="318" font-size="8" fill="#888888" font-weight="600">Output  dist/</text>
+  <rect x="514" y="322" width="62" height="14" rx="3" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="545" y="332" text-anchor="middle" font-size="7.5" fill="#15803d" font-weight="600">index.html</text>
+  <rect x="514" y="340" width="62" height="14" rx="3" fill="#f0fdf4" stroke="#16a34a" stroke-width="1"/>
+  <text x="545" y="350" text-anchor="middle" font-size="7.5" fill="#15803d">style.css</text>
+  <rect x="514" y="358" width="62" height="14" rx="3" fill="#f0fdf4" stroke="#16a34a" stroke-width="1"/>
+  <text x="545" y="368" text-anchor="middle" font-size="7.5" fill="#15803d">img/</text>
+
+  <text x="588" y="328" font-size="7.5" fill="#888888">shutil.copy()</text>
+  <text x="588" y="340" font-size="7.5" fill="#888888">shutil.copytree()</text>
+
+  <text x="588" y="440" text-anchor="middle" font-size="8" fill="#888888">skip_app_build: true</text>
+
+
+  <!-- ═══════════════════════════════════════════════════
+       ARROW 3
+  ═══════════════════════════════════════════════════ -->
+  <line x1="686" y1="290" x2="724" y2="290" stroke="#c9a41e" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="705" y="283" text-anchor="middle" font-size="8" fill="#c9a41e" font-weight="600">upload</text>
+
+
+  <!-- ═══════════════════════════════════════════════════
+       ZONE 4 — AZURE
+  ═══════════════════════════════════════════════════ -->
+  <rect x="728" y="72" width="208" height="420" rx="8" fill="#ffffff" stroke="#0078d4" stroke-width="1.5" filter="url(#cardshadow)"/>
+  <rect x="728" y="72" width="208" height="32" rx="8" fill="#0078d4"/>
+  <rect x="728" y="88" width="208" height="16" fill="#0078d4"/>
+  <text x="832" y="92" text-anchor="middle" font-size="9" fill="#ffffff" letter-spacing="3" font-weight="700">AZURE</text>
+
+  <!-- Azure cloud circle -->
+  <circle cx="832" cy="148" r="28" fill="#eff6ff" stroke="#0078d4" stroke-width="1.5"/>
+  <text x="832" y="155" text-anchor="middle" font-size="24" fill="#0078d4">☁</text>
+
+  <text x="832" y="194" text-anchor="middle" font-size="9" fill="#0050a0" font-weight="600">Static Web Apps</text>
+  <text x="832" y="207" text-anchor="middle" font-size="8" fill="#57606a">Azure/static-web-apps-deploy@v1</text>
+
+  <!-- CDN -->
+  <rect x="748" y="222" width="168" height="48" rx="4" fill="#eff6ff" stroke="#0078d4" stroke-width="1"/>
+  <text x="832" y="240" text-anchor="middle" font-size="8" fill="#0050a0" font-weight="600">Global CDN edge</text>
+  <text x="832" y="254" text-anchor="middle" font-size="7.5" fill="#57606a">TLS · Custom domain · Geo-distributed</text>
+  <text x="832" y="265" text-anchor="middle" font-size="7.5" fill="#57606a">Free SSL cert auto-renewal</text>
+
+  <!-- dist files -->
+  <rect x="748" y="280" width="168" height="70" rx="4" fill="#f8f9fa" stroke="#0078d4" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="832" y="298" text-anchor="middle" font-size="8" fill="#0050a0">app_location: dist/</text>
+  <rect x="760" y="304" width="52" height="13" rx="2" fill="#f0fdf4" stroke="#16a34a" stroke-width="1"/>
+  <text x="786" y="313" text-anchor="middle" font-size="7.5" fill="#15803d">index.html</text>
+  <rect x="818" y="304" width="46" height="13" rx="2" fill="#faf5ff" stroke="#4a1e9e" stroke-width="1"/>
+  <text x="841" y="313" text-anchor="middle" font-size="7.5" fill="#4a1e9e">style.css</text>
+  <rect x="760" y="322" width="30" height="13" rx="2" fill="#faf5ff" stroke="#4a1e9e" stroke-width="1"/>
+  <text x="775" y="331" text-anchor="middle" font-size="7.5" fill="#4a1e9e">img/</text>
+
+  <!-- Live site badge -->
+  <rect x="748" y="366" width="168" height="40" rx="6" fill="url(#purpleGrad)"/>
+  <text x="832" y="383" text-anchor="middle" font-size="8" fill="#e2bf2b" font-weight="700" letter-spacing="1">LIVE SITE</text>
+  <text x="832" y="398" text-anchor="middle" font-size="9" fill="#ffffff">jasonbrisbin.com</text>
+
+  <text x="832" y="440" text-anchor="middle" font-size="8" fill="#888888">browsers worldwide 🌐</text>
+
+
+  <!-- ═══════════════════════════════════════════════════
+       BOTTOM LEGEND
+  ═══════════════════════════════════════════════════ -->
+  <rect x="24" y="510" width="912" height="52" rx="6" fill="#ffffff" stroke="#e8e8e8" stroke-width="1"/>
+
+  <rect x="44" y="524" width="10" height="10" rx="2" fill="#e2bf2b"/>
+  <text x="60" y="533" font-size="9" fill="#444444">Resume data (YAML)</text>
+
+  <rect x="180" y="524" width="10" height="10" rx="2" fill="#2563eb"/>
+  <text x="196" y="533" font-size="9" fill="#444444">Jinja2 template</text>
+
+  <rect x="300" y="524" width="10" height="10" rx="2" fill="#4a1e9e"/>
+  <text x="316" y="533" font-size="9" fill="#444444">Static assets (CSS · img)</text>
+
+  <rect x="450" y="524" width="10" height="10" rx="2" fill="#16a34a"/>
+  <text x="466" y="533" font-size="9" fill="#444444">Build output (dist/)</text>
+
+  <rect x="580" y="524" width="10" height="10" rx="2" fill="#0078d4"/>
+  <text x="596" y="533" font-size="9" fill="#444444">Azure deployment</text>
+
+  <rect x="44" y="546" width="10" height="10" rx="2" fill="#1a7f37"/>
+  <text x="60" y="555" font-size="9" fill="#444444">Trigger: git push to master → GitHub Actions runs automatically</text>
+
+  <text x="700" y="555" font-size="8" fill="#aaaaaa">Inter · Oswald · Font Awesome 5</text>
+
+</svg>

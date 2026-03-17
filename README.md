@@ -1,6 +1,6 @@
 # Resume Site — jasonbrisbin.com
 
-A static resume site built with Python, Jinja2, and deployed automatically to Azure Static Web Apps via GitHub Actions. Live at [jasonbrisbin.com](https://jasonbrisbin.com).
+A static resume site built with Python, Jinja2, and deployed automatically to Azure Static Web Apps via GitHub Actions. Live at [jasonbrisbin.com](https://jasonbrisbin.com). The site was redesigned from the ground up by Jason Brisbin working exclusively with [Claude Code](https://claude.ai/claude-code).
 
 ## Background
 
@@ -31,36 +31,11 @@ The entire build pipeline is now 50 lines of readable Python. Any developer with
 
 Resume content is maintained in a single YAML file (`src/content.yaml`). A Python build script reads that file and renders it through a Jinja2 HTML template, producing a self-contained static site in `dist/`. Pushing to `master` triggers a GitHub Actions workflow that builds the site and deploys it directly to Azure.
 
-```
-src/content.yaml  ──▶  build.py (Python + Jinja2)  ──▶  dist/index.html  ──▶  Azure
-```
-
-## Tech Stack
-
-| Layer   | Technology                                                 |
-| ------- | ---------------------------------------------------------- |
-| Content | YAML                                                       |
-| Build   | Python 3.12, Jinja2, PyYAML                                |
-| Styling | Custom CSS, Font Awesome 5, Google Fonts (Oswald + Roboto) |
-| CI/CD   | GitHub Actions                                             |
-| Hosting | Azure Static Web Apps                                      |
+![Build & Deploy Pipeline](docs/build-pipeline.svg)
 
 ## Project Structure
 
-```
-resumesite/
-├── src/
-│   ├── content.yaml     # Resume data — single source of truth
-│   ├── template.html    # Jinja2 HTML template
-│   ├── style.css        # Site stylesheet
-│   └── img/             # Static images (headshot, etc.)
-├── dist/                # Generated output (not committed)
-├── build.py             # Build script
-├── requirements.txt     # Python dependencies
-└── .github/
-    └── workflows/
-        └── deploy.yml   # CI/CD pipeline
-```
+![Project Structure](docs/project-structure.svg)
 
 ## Local Development
 
