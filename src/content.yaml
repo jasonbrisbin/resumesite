@@ -24,6 +24,7 @@ Experience:
     Date: May 2024 - Current
     Details:
     - Refactored Terraform code to deploy Azure Landing Zone infrastructure across multiple tenants and regions.
+    - Leveraged AI coding assistants (Claude Code, GitHub Copilot) to accelerate Terraform infrastructure deployments
     - Redesigned and implemented vWAN in Azure using Azure Firewall leveraging routing intent and an internal DNS solution using the virtual hub extension pattern.
     - Built and deployed Azure DevOps agents on the private network using an ADO managed VMSS and the official runner images from Microsoft.
     - Migrated from stand alone terraform CLI with shared state file to Terraform Cloud.  Created IaC to manage our Terraform Cloud organization including populating workspaces with deployment output.
@@ -32,7 +33,13 @@ Experience:
     - Aligned the team around an agile methodology introducing Working Agreements, formalizing a Definition of Done, and then organizing our backlog by Epic, Feature, and User Stories based on priority and delivery commitments.
     - Designed, developed, and implemented a least privilege database access module for a multitenancy environment in postgres with Terraform.
     - Redesigned deployment processes moving to a gitflow type process, reconcilled more than 500 occurences of drift with running state , refactored pipelines to leverage templates, and added CI testing to IAC pipelines.
-    Badges: ['Azure DevOps', 'Azure', 'Terraform', 'Powershell', 'Postgresql']
+    Badges:
+      - 'Azure DevOps'
+      - 'Azure'
+      - 'Terraform'
+      - 'Powershell'
+      - 'Postgresql'
+      - 'AI'
 - Employer: iTrellis
   Place: Minnesota, US
   Positions:
@@ -58,12 +65,12 @@ Experience:
     Date: Sep 2019 - May 2022
     Details:
     - Maintained our Infrastructure as Code templates and tooling for deploying to Azure.  Our PowerShell tooling enriches ARM templates with dynamic runtime values, while also handles deployment sequencing between projects. I enhanced the tools by adding telemetry, enhanced error handling, and post deployment processing. Code covered DNS, Certificates, WAF/AppGw, AppServices, FunctionApps, KeyVault, SQL , Storage, Redis, App Registrations, Application Insights, LogAnalytics, App Configuration, RBAC, and more.
-    - Designed and Built a Managed Identity infrastructure to interact with the Azure API’s beyond the management plane which was required to implement configurations not currently exposed via ARM templates or cmdlets.
+    - Designed and Built a Managed Identity infrastructure to interact with the Azure API's beyond the management plane which was required to implement configurations not currently exposed via ARM templates or cmdlets.
     - Deployed Application Insights for an on-premise application whose stack included IIS, Apache, Python, and MySQL running on a mix of Linux and Windows servers.
     - Simplified ARM templates to use direct keyvault references for App Services configuration settings. Added references to resources for retrieving keys, addresses, and domain validation codes.
     - Designed a complete secrets management solution which included public key based secret storage in version control with a build and release pipeline. The pipeline handles the process of promoting values throughout the environment and was capable of update Azure App Services, Keyvault, and Azure App Configuration securely.
     - Migrated existing company product to new resources in Azure with infrastructure code. Built data synchronization jobs in Azure Datafactory. Managed convergence of two infrastructure code branches and led the planning and execution of the cutover.
-    - Built pipelines for creating Virtual Machine OS images to support IaaS needs in Azure.  Leveraging existing Marketplace images, I developed a solution for customizing OS’s and publishing the image to Azure Compute Gallery for distribution using Azure DevOps and Packer.
+    - Built pipelines for creating Virtual Machine OS images to support IaaS needs in Azure.  Leveraging existing Marketplace images, I developed a solution for customizing OS's and publishing the image to Azure Compute Gallery for distribution using Azure DevOps and Packer.
     - Started the process of implementing the Cloud Adoption Framework from Microsoft.  Beginning with creating new subscriptions and management groups for connectivity and management
     Badges: ['Powershell', 'ARM Templates', 'Azure', 'Azure DevOps']
 - Employer: Infinite Campus
@@ -103,7 +110,7 @@ Experience:
     Details:
     - Performed detailed case study for Infrastructure as a Service and Platform as a Service models to demonstrate the potential cost savings leveraging public cloud infrastructure.
     - Built and deployed ARM templates for deploying consistent infrastructure.
-    - Designed and implemented hybrid cloud solution leveraging Microsoft’s Azure platform.
+    - Designed and implemented hybrid cloud solution leveraging Microsoft's Azure platform.
     - Driving the network design solution for Office 365 connectivity.
     - Leading the ISP model transformation for the Crop business to align with standard operating model.
     Badges: ['Powershell', 'ARM Templates', 'o365', 'Azure']
@@ -134,7 +141,7 @@ Experience:
     - Developed and published an annual infrastructure roadmap which was shared with senior management as well as peer organizations such as operations and development. This helped ensure alignment between organizations and provide critical insight for all teams related to current issues, resource demands, and service delivery.
     - Built out a co-location facility primarily for disaster recovery enhancement and secondarily to position the company for geographic redundancy.
     - Directed the development of internal application deployment solution to automate our deployment process, centralize event logging, guarantee integrity, remote administration, one-to-many deployment, and roll back capabilities.
-    - Implemented converged infrastructure solution for all datacenters. Modernized the server platform with blade servers and local aggregation switches including migration of all servers off Windows 2003 by May 2015. Consolidated our network by integrating voice, data and storage on Cisco’s nexus platform. Deployed a single storage product to provide block storage as well as CIFS/NFS/SFTP.
+    - Implemented converged infrastructure solution for all datacenters. Modernized the server platform with blade servers and local aggregation switches including migration of all servers off Windows 2003 by May 2015. Consolidated our network by integrating voice, data and storage on Cisco's nexus platform. Deployed a single storage product to provide block storage as well as CIFS/NFS/SFTP.
     - Eliminated point to point connections and implemented MPLS wan technology to enhance resiliency. During the migration we implemented advanced QoS to prioritize voice and business applications traffic.
     - Passed a significant and rigorous internal technology audit earning the highest rating ever given to RCIS. Functioned as the point of contact for all of infrastructure including Firewall, VPN, Routers, Switches, NIDS, AV, Configuration Management, Provisioning, Source Code Management, Automated build processes, Active Directory, and Citrix.
 
@@ -144,7 +151,7 @@ Experience:
     Details:
     - Lead engineer on Application Delivery Controller selection and implementation effort. Implemented clustering, disaster recovery, two factor authentication, SSL offloading, port translation, connection pooling, application firewall, and content redirection on Citrix Netscaler 9.2. Migrated all NLB implementations over to ADC solution. Wrote Powershell tools to troubleshoot and report configuration status of all Netscaler appliances.
     - Implemented HP Blade Server solution and introduced converged networking with HP Virtual Connect.
-    - Upgrade Citrix Presentation Server 5.0 to Citrix Xenapp 6.5 for all environments which included developing OS build process while upgrading to Windows 2008 R2. Rolled out new GPO’s to secure the environment and manage the configuration. Redesigned the farm configuration using server and user policies new in Xenapp 6.5. Separated controllers and session hosts for additional resiliency. Moved Secure Gateway/Web Interface servers behind load balancer and reverse proxied the connection to the internal network. Installed and configured two factor authentication solution for remote employee access using Microsoft Multifactor Authentication for Citrix Web Interface.  Implemented Session Recording and Edgesight to improve support and customer experience.
+    - Upgrade Citrix Presentation Server 5.0 to Citrix Xenapp 6.5 for all environments which included developing OS build process while upgrading to Windows 2008 R2. Rolled out new GPO's to secure the environment and manage the configuration. Redesigned the farm configuration using server and user policies new in Xenapp 6.5. Separated controllers and session hosts for additional resiliency. Moved Secure Gateway/Web Interface servers behind load balancer and reverse proxied the connection to the internal network. Installed and configured two factor authentication solution for remote employee access using Microsoft Multifactor Authentication for Citrix Web Interface.  Implemented Session Recording and Edgesight to improve support and customer experience.
     - Implemented Secure FTP solution to directly provide customers with data. Integrated solution with the Indentity Management platform to provide automated provisioning and de-provisioning of access. Designed integrated process with DBA team to dynamically deliver customer data via this channel through a subscription model. Implemented file monitors, ETL, and monitoring solutions in Powershell.
     - Developed rolling update infrastructure processes for external applications. This process minimized disruption for customers while performing maintenance on Application, Presentation, and Database tiers.
     Badges: ['Citrix XenApp', 'Netscaler', 'Powershell', 'Converged Infrastructure', 'Windows Server']

@@ -10,7 +10,6 @@ The Hugo setup required:
 - A pinned Hugo binary (v0.92.0), Node.js, and Docker just to run locally
 - Two git submodules for external themes — both had to be initialized before any template work could happen
 - An opaque build process where Azure Static Web Apps was expected to auto-detect and invoke Hugo (no explicit build step in CI/CD)
-- A mix of Markdown files and a YAML data file, despite Markdown never actually being used for content
 
 The Hugo site was driven by a `data/content.yaml` file which was reused in this solution. The theme was just a layer of Go-template indirection sitting between that data and the HTML output.
 
