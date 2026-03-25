@@ -24,22 +24,22 @@ Experience:
     Date: May 2024 - Current
     Details:
     - Refactored Terraform code to deploy Azure Landing Zone infrastructure across multiple tenants and regions.
-    - Leveraged AI coding assistants (Claude Code, GitHub Copilot) to accelerate Terraform infrastructure deployments
-    - Redesigned and implemented vWAN in Azure using Azure Firewall leveraging routing intent and an internal DNS solution using the virtual hub extension pattern.
-    - Built and deployed Azure DevOps agents on the private network using an ADO managed VMSS and the official runner images from Microsoft.
-    - Migrated from stand alone terraform CLI with shared state file to Terraform Cloud.  Created IaC to manage our Terraform Cloud organization including populating workspaces with deployment output.
-    - Conducted POC to automate resource Tagging using Terratag to tie build and deployments to resources in the Azure control plane.
-    - Automated PIM Setup and enrollment using Azure DevOps pipelines, Terraform, and Powershell to configure group options, eligible assignments, and owners.
-    - Aligned the team around an agile methodology introducing Working Agreements, formalizing a Definition of Done, and then organizing our backlog by Epic, Feature, and User Stories based on priority and delivery commitments.
-    - Designed, developed, and implemented a least privilege database access module for a multitenancy environment in postgres with Terraform.
-    - Redesigned deployment processes moving to a gitflow type process, reconcilled more than 500 occurences of drift with running state , refactored pipelines to leverage templates, and added CI testing to IAC pipelines.
-    Badges:
-      - 'Azure DevOps'
-      - 'Azure'
-      - 'Terraform'
-      - 'Powershell'
-      - 'Postgresql'
-      - 'AI'
+    - Leveraged AI coding assistants (Claude Code, GitHub Copilot) to accelerate Terraform infrastructure deployments.
+    - Redesigned and implemented vWAN in Azure using Azure Firewall, leveraging routing intent and an internal DNS solution using the virtual hub extension pattern.
+    - Built and deployed Azure DevOps agents on the private network using an ADO-managed VMSS and the official runner images from Microsoft.
+    - Migrated from a standalone Terraform CLI with a shared state file to Terraform Cloud. Created IaC to manage our Terraform Cloud organization, including populating workspaces with deployment outputs.
+    - Conducted a POC to automate resource tagging using Terratag to tie builds and deployments to resources in the Azure control plane.
+    - Automated PIM setup and enrollment using Azure DevOps pipelines, Terraform, and PowerShell to configure group options, eligible assignments, and owners.
+    - Aligned the team around an agile methodology, introducing working agreements, formalizing a definition of done, and then organizing our backlog by Epic, Feature, and User Stories based on priority and delivery commitments.
+    - Designed, developed, and implemented a least-privilege database access module for a multitenancy environment in PostgreSQL with Terraform.
+    - Redesigned deployment processes, moving to a Gitflow-type process, reconciled more than 500 occurrences of drift with the running state, refactored pipelines to leverage templates, and added CI testing to IaC pipelines.
+  Badges:
+    - Azure DevOps
+    - Azure
+    - Terraform
+    - Powershell
+    - Postgresql
+    - AI
 - Employer: iTrellis
   Place: Minnesota, US
   Positions:
@@ -52,11 +52,20 @@ Experience:
     - Implemented database version control and automated database migrations for an internal API based on Python, FastAPI, SQLAlchemy, Alembic, and PostgreSQL.
     - Built testing capabilities for integration testing in an ephemeral environment within Azure DevOps for each pull request, utilizing Docker, Azure Container Registries, and Python.
     - Engineered system test and end-to-end testing solutions within the application deployment pipeline, automating validation of changes as a requirement for successful deployments.
-    - Collaborated on a proof of concept for Crossplane to provision infrastructure using Kubernetes as the Control Plane. This tool allows for the provisioning of cloud resources using Kubernetes standard deployments.
+    - Collaborated on a Proof of Concept (POC) for Crossplane to provision infrastructure using Kubernetes as the Control Plane. This tool allows for the provisioning of cloud resources using Kubernetes standard deployments.
     - Integrated Azure Cost exports data with Kubecost, providing comprehensive out-of-cluster analysis for namespaces and associated shared resources, empowering application teams with valuable insights.
     - Conducted an in-depth DevOps capabilities analysis, identifying areas of improvement in clients' Build and Release processes, Infrastructure, Operations, and Change Management.
     - Achieved Azure Development Associate certification (AZ-204 exam) and HashiCorp Certified Terraform Associate certification.
-    Badges: ['Azure DevOps', 'Azure', 'Python', 'Terraform', 'Shell', 'Kubernetes', 'Helm', 'AWS', 'Postgresql']
+  Badges:
+    - Azure DevOps
+    - Azure
+    - Python
+    - Terraform
+    - Shell
+    - Kubernetes
+    - Helm
+    - AWS
+    - Postgresql
 - Employer: Vanco Payment Solutions
   Place: Minnesota, US
   Class: "experience__extra_padding"
