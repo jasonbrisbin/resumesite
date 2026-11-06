@@ -29,7 +29,7 @@ def build():
     print(f"Built {output_path}")
 
     # Copy static assets
-    for filename in ("style.css",):
+    for filename in ("style.css", "staticwebapp.config.json"):
         src = os.path.join(SRC_DIR, filename)
         if os.path.exists(src):
             shutil.copy(src, os.path.join(DIST_DIR, filename))

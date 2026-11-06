@@ -1,0 +1,9 @@
+{
+  "routes": [
+    {
+      "route": "/recipes",
+      "redirect": "https://muse.ai/s/recipe-collection-xpc6d5xaxg6xr7xh/1mcgTUFSffugYpl0VIyL7-juqOaH5NmYwDXupFRTKrY",
+      "statusCode": 301
+    }
+  ]
+}
